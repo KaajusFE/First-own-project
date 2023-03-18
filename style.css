@@ -15,10 +15,11 @@ body{
     text-align: center;
 }
 .square{
+    background-color: black;
     float: left;
     width: 200px;
     height: 200px;
-    border: solid black 5px;
+    border: solid wheat 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +28,7 @@ body{
 .kolko{
     width: 150px;
     height: 150px;
-    border:  solid aqua 4px;
+    border:  solid lightcoral 4px;
     border-radius: 100px;
 }
 .krzyzyk{
@@ -36,7 +37,7 @@ body{
 
 }
 #pion{
-    border: 4px solid black;
+    border: 4px solid lightgreen;
     height: 140px;
     width: 0px;
     position: relative;
@@ -45,8 +46,31 @@ body{
 #poziom{
     width: 140px;
     height: 0px;
-    border: 4px solid black;
+    border: 4px solid lightgreen;
     position: absolute;
     margin-top: 75px;
     transform: rotate(45deg);
+}
+#kowin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 30px;
+    color: lightcoral;
+}
+#kowin2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: yellow;
+    font-size: 30px;
+}
+#kowin2 a{
+    background-color: black;
+    border: solid black 3px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: yellow;
 }
