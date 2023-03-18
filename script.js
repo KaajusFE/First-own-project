@@ -26,7 +26,7 @@ sqr8.addEventListener("click", function() { choose(8); } );
 var changer = false;
 var krzyzyk = "<div class=\"krzyzyk\"><hr id=\"poziom\"><hr id=\"pion\"></div>";
 var kolko = "<div class=\"kolko\"></div>";
-
+var counter = 0;
 
 function choose(nr){
     if(changer == false){
@@ -34,12 +34,14 @@ function choose(nr){
         $("#sqr"+nr).css("cursor", "default");
         $("#sqr"+nr).css("font-size", "1px");
         changer = true;
+        counter++;
     }
     else{
         document.getElementById("sqr" + nr).innerHTML = krzyzyk;
         $("#sqr"+nr).css("cursor", "default");
         $("#sqr"+nr).css("font-size", "2px");
         changer = false;
+        counter++;
     }
 
     setTimeout(function() { check() });
@@ -62,6 +64,7 @@ function check(){
     var kowin = "<div id=\"kowin\">O Wins, <br/>Gratulations!<br/> Want to play again?</div>";
     var kowin2 = "<div id=\"kowin2\"><a href=\"index.html\">Play again!</a></div>";
     var xwin = "<div id=\"kowin\">X Wins, <br/>Gratulations!<br/> Want to play again?</div>";
+    var draw ="<div id=\"draw\">It's draw!<br/> Better luck next time.<br/> Want to play again?</div>";
     if((ch0 == "1px") && (ch3 == "1px") && (ch6 == "1px")){
         document.getElementById("main").innerHTML = kowin + kowin2;
     }
@@ -123,6 +126,9 @@ function check(){
     }
     else if((ch2 == "2px") && (ch4 == "2px") && (ch6 == "2px")){
         document.getElementById("main").innerHTML = xwin + kowin2;
+    }
+    else if(counter == "9"){
+        document.getElementById("main").innerHTML = draw + kowin2;
     }
     setTimeout(function() { cancel() });
 }

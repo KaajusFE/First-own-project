@@ -74,3 +74,21 @@ body{
     text-decoration: none;
     color: yellow;
 }
+#xwin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 30px;
+    color: lightgreen;
+}
+#draw{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 30px;
+    color: wheat;
+    
+}
