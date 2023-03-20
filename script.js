@@ -11,7 +11,7 @@ var sqr7 = document.getElementById("sqr7");
 var sqr8 = document.getElementById("sqr8");
 
 
-sqr0.addEventListener("click", function() { choose(0); }, false );
+sqr0.addEventListener("click", function() { choose(0); } );
 sqr1.addEventListener("click", function() { choose(1); } );
 sqr2.addEventListener("click", function() { choose(2); } );
 
