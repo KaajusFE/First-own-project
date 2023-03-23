@@ -154,24 +154,5 @@ function check(){
         document.getElementById("main").innerHTML = draw + kowin2;
         $("#main").css("border","solid 5px gold");
     }
-    setTimeout(function() { cancel() });
 }
 
-function cancel(){
-    var ch0 = $("#sqr0").css("font-size");
-    var ch1 = $("#sqr1").css("font-size");
-    var ch2 = $("#sqr2").css("font-size");
-
-    var ch3 = $("#sqr3").css("font-size");
-    var ch4 = $("#sqr4").css("font-size");
-    var ch5 = $("#sqr5").css("font-size");
-
-    var ch6 = $("#sqr6").css("font-size");
-    var ch7 = $("#sqr7").css("font-size");
-    var ch8 = $("#sqr8").css("font-size");
-
-    if(ch0 == "1px" || ch0 == "2px"){
-        console.log("wad")
-    }
-
-}
