@@ -74,32 +74,40 @@ function check(){
     var draw ="<div id=\"draw\">It's draw!<br/> Better luck next time.<br/> Want to play again?</div>";
     if((ch0 == "1px") && (ch3 == "1px") && (ch6 == "1px")){
         document.getElementById("main").innerHTML = kowin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     else if((ch1 == "1px") && (ch4 == "1px") && (ch7 == "1px")){
         document.getElementById("main").innerHTML = kowin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     else if((ch2 == "1px") && (ch5 == "1px") && (ch8 == "1px")){
         document.getElementById("main").innerHTML = kowin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
 
 
 
     else if((ch0 == "1px") && (ch1 == "1px") && (ch2 == "1px")){
         document.getElementById("main").innerHTML = kowin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     else if((ch3 == "1px") && (ch4 == "1px") && (ch5 == "1px")){
         document.getElementById("main").innerHTML = kowin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     else if((ch6 == "1px") && (ch7 == "1px") && (ch8 == "1px")){
         document.getElementById("main").innerHTML = kowin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
 
 
     else if((ch0 == "1px") && (ch4 == "1px") && (ch8 == "1px")){
         document.getElementById("main").innerHTML = kowin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     else if((ch2 == "1px") && (ch4 == "1px") && (ch6 == "1px")){
         document.getElementById("main").innerHTML = kowin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
 
     ///krzyzyk
@@ -107,35 +115,44 @@ function check(){
 
     if((ch0 == "2px") && (ch3 == "2px") && (ch6 == "2px")){
         document.getElementById("main").innerHTML = xwin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     else if((ch1 == "2px") && (ch4 == "2px") && (ch7 == "2px")){
         document.getElementById("main").innerHTML = xwin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     else if((ch2 == "2px") && (ch5 == "2px") && (ch8 == "2px")){
         document.getElementById("main").innerHTML = xwin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
 
 
 
     else if((ch0 == "2px") && (ch1 == "2px") && (ch2 == "2px")){
         document.getElementById("main").innerHTML = xwin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     else if((ch3 == "2px") && (ch4 == "2px") && (ch5 == "2px")){
         document.getElementById("main").innerHTML = xwin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     else if((ch6 == "2px") && (ch7 == "2px") && (ch8 == "2px")){
         document.getElementById("main").innerHTML = xwin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
 
 
     else if((ch0 == "2px") && (ch4 == "2px") && (ch8 == "2px")){
         document.getElementById("main").innerHTML = xwin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     else if((ch2 == "2px") && (ch4 == "2px") && (ch6 == "2px")){
         document.getElementById("main").innerHTML = xwin + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     else if(counter == "9"){
         document.getElementById("main").innerHTML = draw + kowin2;
+        $("#main").css("border","solid 5px gold");
     }
     setTimeout(function() { cancel() });
 }
