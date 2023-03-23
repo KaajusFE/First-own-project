@@ -29,22 +29,29 @@ var kolko = "<div class=\"kolko\"></div>";
 var counter = 0;
 
 function choose(nr){
-    if(changer == false){
-        document.getElementById("sqr" + nr).innerHTML =kolko;
-        $("#sqr"+nr).css("cursor", "default");
-        $("#sqr"+nr).css("font-size", "1px");
-        changer = true;
-        counter++;
-    }
-    else{
-        document.getElementById("sqr" + nr).innerHTML = krzyzyk;
-        $("#sqr"+nr).css("cursor", "default");
-        $("#sqr"+nr).css("font-size", "2px");
-        changer = false;
-        counter++;
-    }
+    var clickchecker = $("#sqr" + nr).css("font-size");
+    if(clickchecker == "16px"){
+            if(changer == false){
+                document.getElementById("sqr" + nr).innerHTML =kolko;
+                $("#sqr"+nr).css("cursor", "default");
+                $("#sqr"+nr).css("font-size", "1px");
+                changer = true;
+                counter++;
+            }
+            else{
+                document.getElementById("sqr" + nr).innerHTML = krzyzyk;
+                $("#sqr"+nr).css("cursor", "default");
+                $("#sqr"+nr).css("font-size", "2px");
+                changer = false;
+                counter++;
+            }
 
-    setTimeout(function() { check() });
+
+        setTimeout(function() { check() });
+    }
+    
+
+    
 }
 
 function check(){
