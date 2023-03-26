@@ -30,6 +30,7 @@ body{
     height: 150px;
     border:  solid lightcoral 4px;
     border-radius: 100px;
+    transition: ease-in 1s;
 }
 .krzyzyk{
     width: 150px;
