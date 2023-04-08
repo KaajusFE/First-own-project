@@ -1,3 +1,6 @@
+//zrobic petle for i zautomatyzowac skrypt
+
+
 var sqr0 = document.getElementById("sqr0");
 var sqr1 = document.getElementById("sqr1");
 var sqr2 = document.getElementById("sqr2");
