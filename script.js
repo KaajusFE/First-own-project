@@ -1,4 +1,5 @@
 //zrobic petle for i zautomatyzowac skrypt
+//wad
 
 
 var sqr0 = document.getElementById("sqr0");
